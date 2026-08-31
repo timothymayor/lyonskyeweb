@@ -209,7 +209,7 @@
  <body data-template-id="__page-root" class="w-full bg-white" style="background: rgb(255, 255, 255);">
   <header data-template-id="site-header" class="canva-header sticky top-0 z-50 border-b border-white/10" style="background:#061d3b">
    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-    <a href="#home" class="focus-ring flex items-center gap-3 rounded" aria-label="Lyonskye Offshore Marine home"> <img data-template-id="header-logo" loading="lazy" class="h-12 md:h-14 w-auto object-contain transition hover:opacity-95" src="/src/assets/images/regenerated_image_1788216462348.png" alt="Lyonskye Offshore Marine Ltd. logo"> </a>
+    <a href="#home" class="focus-ring flex items-center gap-3 rounded" aria-label="Lyonskye Offshore Marine home"> <img data-template-id="header-logo" loading="lazy" class="h-12 md:h-14 w-auto object-contain transition hover:opacity-95" src="/logo-header.png" onerror="this.onerror=null;this.src='/src/assets/images/regenerated_image_1788216462348.png'" alt="Lyonskye Offshore Marine Ltd. logo"> </a>
     <div class="hidden items-center gap-6 md:flex">
       <nav class="flex items-center gap-6" aria-label="Primary navigation">
        <a class="nav-link focus-ring rounded" href="#home">Home</a><a class="nav-link focus-ring rounded" href="#about">About Us</a><a class="nav-link focus-ring rounded" href="#services">Services</a><a class="nav-link focus-ring rounded" href="#testimonials">Testimonials</a><a class="nav-link focus-ring rounded" href="#blog">Blog</a><a class="nav-link focus-ring rounded" href="#contact">Contact</a>
@@ -483,9 +483,11 @@
        </div>
       </aside>
       <form id="contact-form" action="https://formsubmit.co/contact@lyonskyeoffshore.com" method="POST" class="canva-panel rounded-sm p-7 shadow-sm" novalidate="">
-        <input type="hidden" name="_subject" value="New Maritime Enquiry - Lyonskye Offshore Marine Ltd.">
+        <input type="hidden" name="_to" value="contact@lyonskyeoffshore.com">
+        <input type="hidden" name="_subject" id="form-subject" value="New Maritime Enquiry - Lyonskye Offshore Marine Ltd.">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_replyto" id="form-replyto" value="">
        <div class="grid gap-5 sm:grid-cols-2">
         <div><label data-template-id="label-full-name" class="canva-text mb-2 block font-bold" for="full_name" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Full name *</label><input id="full_name" name="full_name" class="focus-ring w-full border border-slate-300 bg-white p-3" required="">
          <p id="full_name-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
@@ -513,7 +515,7 @@
    </section>
   </main>
   <footer data-template-id="site-footer" class="canva-footer" style="background:#061d3b">
-   <div class="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-9 text-slate-200 md:flex-row md:items-center md:justify-between lg:px-8"><img data-template-id="footer-logo" loading="lazy" class="h-14 w-auto object-contain" src="/src/assets/images/regenerated_image_1788216580656.png" alt="Lyonskye Offshore Marine Ltd. logo">
+   <div class="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-9 text-slate-200 md:flex-row md:items-center md:justify-between lg:px-8"><img data-template-id="footer-logo" loading="lazy" class="h-14 w-auto object-contain" src="/logo-footer.png" onerror="this.onerror=null;this.src='/src/assets/images/regenerated_image_1788216580656.png'" alt="Lyonskye Offshore Marine Ltd. logo">
     <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm"><a class="focus-ring rounded" href="#about">About</a><a class="focus-ring rounded" href="#services">Services</a><a class="focus-ring rounded" href="#contact">Contact</a>
     </div>
     <div>
@@ -659,7 +661,92 @@
     const dataHandler={onDataChanged(){}};
     (async()=>{const result=await window.dataSdk.init(dataHandler);dataReady=result.isOk;if(!result.isOk){status.textContent="Unable to prepare the enquiry form. Please try again shortly.";status.className="mt-4 font-semibold text-red-700";}})();
     function setError(field,message){const el=document.getElementById(field+"-error");el.textContent=message;document.getElementById(field).setAttribute("aria-invalid",message?"true":"false");}
-    form.addEventListener("submit",async event=>{event.preventDefault();status.textContent="";let valid=true;["full_name","email","service","message"].forEach(f=>setError(f,""));const email=form.email.value.trim();if(!form.full_name.value.trim()){setError("full_name","Please enter your full name.");valid=false}if(!email||!/^\S+@\S+\.\S+$/.test(email)){setError("email","Please enter a valid email address.");valid=false}if(!form.service.value){setError("service","Please choose a service.");valid=false}if(!form.message.value.trim()){setError("message","Please tell us how we can help.");valid=false}if(!valid)return;if(!dataReady){status.textContent="The form is not ready yet. Please try again in a moment.";status.className="mt-4 font-semibold text-red-700";return}submit.disabled=true;submit.style.opacity=".65";const result=await window.dataSdk.create({full_name:form.full_name.value.trim(),company:form.company.value.trim(),email,phone:form.phone.value.trim(),service:form.service.value,message:form.message.value.trim(),submitted_at:new Date().toISOString()});submit.disabled=false;submit.style.opacity="1";if(result.isOk){form.reset();status.textContent="Thank you. Your enquiry has been sent successfully.";status.className="mt-4 font-semibold text-emerald-700"}else{status.textContent="We could not send your enquiry. Please try again.";status.className="mt-4 font-semibold text-red-700";}});
+    form.addEventListener("submit",async event=>{
+      event.preventDefault();
+      status.textContent="";
+      let valid=true;
+      ["full_name","email","service","message"].forEach(f=>setError(f,""));
+      const email=form.email.value.trim();
+      const fullName=form.full_name.value.trim();
+      const company=form.company.value.trim();
+      const phone=form.phone.value.trim();
+      const service=form.service.value;
+      const message=form.message.value.trim();
+
+      if(!fullName){setError("full_name","Please enter your full name.");valid=false;}
+      if(!email||!/^\S+@\S+\.\S+$/.test(email)){setError("email","Please enter a valid email address.");valid=false;}
+      if(!service){setError("service","Please choose a service.");valid=false;}
+      if(!message){setError("message","Please tell us how we can help.");valid=false;}
+      if(!valid)return;
+
+      // Update hidden fields for form submit
+      const replyToEl = document.getElementById("form-replyto");
+      if (replyToEl) replyToEl.value = email;
+      const subjectEl = document.getElementById("form-subject");
+      if (subjectEl) subjectEl.value = `New Maritime Enquiry: ${service} - ${fullName}`;
+
+      const originalBtnText = submit.innerHTML;
+      submit.disabled=true;
+      submit.style.opacity=".75";
+      submit.innerHTML = `
+        <span class="inline-flex items-center justify-center gap-2">
+          <svg class="h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Delivering to contact@lyonskyeoffshore.com...
+        </span>
+      `;
+
+      try {
+        const result = await window.dataSdk.create({
+          full_name: fullName,
+          company: company,
+          email: email,
+          phone: phone,
+          service: service,
+          message: message,
+          submitted_at: new Date().toISOString()
+        });
+
+        submit.disabled=false;
+        submit.style.opacity="1";
+        submit.innerHTML = originalBtnText;
+
+        if (result.isOk) {
+          form.reset();
+          status.innerHTML = `
+            <div class="rounded-sm border border-emerald-500/30 bg-emerald-50 p-4 text-emerald-900 dark:border-emerald-500/30 dark:bg-emerald-950/40 dark:text-emerald-200">
+              <div class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 text-emerald-600 dark:text-emerald-400"></i>
+                <div>
+                  <p class="font-bold">Thank you! Your enquiry has been sent to contact@lyonskyeoffshore.com.</p>
+                  <p class="mt-1 text-sm opacity-90">Our marine operations team will review your request and get back to you promptly.</p>
+                </div>
+              </div>
+            </div>
+          `;
+          if (window.lucide && window.lucide.createIcons) lucide.createIcons();
+        } else {
+          status.innerHTML = `
+            <div class="rounded-sm border border-red-500/30 bg-red-50 p-4 text-red-900 dark:border-red-500/30 dark:bg-red-950/40 dark:text-red-200">
+              <p class="font-bold">We could not send your enquiry automatically.</p>
+              <p class="mt-1 text-sm">Please email us directly at <a href="mailto:contact@lyonskyeoffshore.com?subject=${encodeURIComponent('Enquiry: ' + service)}&body=${encodeURIComponent(message)}" class="underline font-bold">contact@lyonskyeoffshore.com</a> or call +2348079739814.</p>
+            </div>
+          `;
+        }
+      } catch (err) {
+        submit.disabled=false;
+        submit.style.opacity="1";
+        submit.innerHTML = originalBtnText;
+        status.innerHTML = `
+          <div class="rounded-sm border border-red-500/30 bg-red-50 p-4 text-red-900 dark:border-red-500/30 dark:bg-red-950/40 dark:text-red-200">
+            <p class="font-bold">An unexpected error occurred.</p>
+            <p class="mt-1 text-sm">Please email us directly at <a href="mailto:contact@lyonskyeoffshore.com" class="underline font-bold">contact@lyonskyeoffshore.com</a>.</p>
+          </div>
+        `;
+      }
+    });
   </script>
  </body>
 </html>
