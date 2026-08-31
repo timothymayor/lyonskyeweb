@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,14 @@
     (function() {
       try {
         const saved = localStorage.getItem('lyonskye_theme');
-        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-        } else {
+        if (saved === 'light') {
           document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
         }
-      } catch (e) {}
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
     })();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
@@ -611,12 +613,12 @@
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in-view")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
     const backTop=document.getElementById("back-top");addEventListener("scroll",()=>backTop.classList.toggle("hidden",scrollY<500));backTop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
 
-    // Theme management (Dark / Light)
+    // Theme management (Dark / Light - Default: Dark)
     function applyTheme(theme) {
-      const isDark = theme === 'dark';
+      const isDark = theme !== 'light';
       document.documentElement.classList.toggle('dark', isDark);
       try {
-        localStorage.setItem('lyonskye_theme', theme);
+        localStorage.setItem('lyonskye_theme', isDark ? 'dark' : 'light');
       } catch (e) {}
 
       // Update toggle icon states
@@ -632,7 +634,9 @@
     function toggleTheme() {
       const isDark = document.documentElement.classList.contains('dark');
       applyTheme(isDark ? 'light' : 'dark');
-      lucide.createIcons();
+      if (window.lucide && window.lucide.createIcons) {
+        lucide.createIcons();
+      }
     }
 
     const themeToggle = document.getElementById('theme-toggle');
@@ -644,17 +648,9 @@
     const themeToggleMobile = document.getElementById('theme-toggle-mobile');
     if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
 
-    // Initialize theme icons
-    const initialIsDark = document.documentElement.classList.contains('dark');
-    applyTheme(initialIsDark ? 'dark' : 'light');
-
-    try {
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!localStorage.getItem('lyonskye_theme')) {
-          applyTheme(e.matches ? 'dark' : 'light');
-        }
-      });
-    } catch (e) {}
+    // Initialize theme: default to dark unless explicitly chosen as light
+    const savedTheme = localStorage.getItem('lyonskye_theme');
+    applyTheme(savedTheme === 'light' ? 'light' : 'dark');
 
     const form=document.getElementById("contact-form"), status=document.getElementById("form-status"), submit=document.getElementById("submit-contact");
     let dataReady=false;
