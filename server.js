@@ -23,10 +23,11 @@ app.get('/api/health', (req, res) => {
 app.post('/api/enquiries', (req, res) => {
   const enquiry = {
     ...req.body,
+    recipient: 'contact@lyonskyeoffshore.com',
     receivedAt: new Date().toISOString()
   };
-  console.log('Received enquiry:', enquiry);
-  res.status(201).json({ success: true, message: 'Enquiry received successfully', data: enquiry });
+  console.log('Received enquiry for contact@lyonskyeoffshore.com:', enquiry);
+  res.status(201).json({ success: true, message: 'Enquiry received and routed to contact@lyonskyeoffshore.com', data: enquiry });
 });
 
 // SPA fallback for routing

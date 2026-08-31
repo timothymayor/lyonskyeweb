@@ -255,21 +255,53 @@
       <aside class="space-y-5">
        <div data-template-id="contact-details-panel" class="canva-panel p-7" style="background: rgb(255, 255, 255);">
         <h3 data-template-id="contact-details-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Contact details</h3>
-        <p data-template-id="contact-address" class="canva-text mt-5" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Address: Add office address</p>
-        <p data-template-id="contact-email" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Email: Add business email</p>
-        <p data-template-id="contact-phone" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Phone: Add business phone</p>
+        <p data-template-id="contact-address" class="canva-text mt-5" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Address: 71 Obio Imo Street, Uyo, Akwa Ibom State, Nigeria</p>
+        <p data-template-id="contact-email" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Email: contact@lyonskyeoffshore.com</p>
+        <p data-template-id="contact-phone" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Phone: +2348079739814</p>
         <hr class="my-5 border-slate-200">
-        <p data-template-id="contact-linkedin" class="canva-text" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">LinkedIn: Add handle</p>
-        <p data-template-id="contact-instagram" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Instagram: Add handle</p>
-        <p data-template-id="contact-facebook" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Facebook: Add handle</p>
+        <div>
+         <p class="mb-3 text-xs font-bold uppercase tracking-wider text-[#061d3b]">Connect with us</p>
+         <div class="flex items-center gap-3">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="focus-ring flex h-10 w-10 items-center justify-center rounded-full bg-[#eef6f8] text-[#061d3b] transition hover:bg-[#061d3b] hover:text-white" aria-label="LinkedIn">
+           <i data-lucide="linkedin" class="h-5 w-5"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="focus-ring flex h-10 w-10 items-center justify-center rounded-full bg-[#eef6f8] text-[#061d3b] transition hover:bg-[#061d3b] hover:text-white" aria-label="Instagram">
+           <i data-lucide="instagram" class="h-5 w-5"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="focus-ring flex h-10 w-10 items-center justify-center rounded-full bg-[#eef6f8] text-[#061d3b] transition hover:bg-[#061d3b] hover:text-white" aria-label="Facebook">
+           <i data-lucide="facebook" class="h-5 w-5"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="focus-ring flex h-10 w-10 items-center justify-center rounded-full bg-[#eef6f8] text-[#061d3b] transition hover:bg-[#061d3b] hover:text-white" aria-label="YouTube">
+           <i data-lucide="youtube" class="h-5 w-5"></i>
+          </a>
+         </div>
+        </div>
        </div>
-       <div class="map-water min-h-64 border border-sky-200 p-6">
-        <div class="relative z-10 mt-14 rounded bg-[#061d3b] p-4 text-white shadow-lg"><i data-lucide="map-pin" class="mb-2 text-sky-300"></i>
-         <p data-template-id="map-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Nigeria / Gulf of Guinea operations</p>
+       <div class="overflow-hidden rounded-sm border border-slate-200 bg-white shadow-sm">
+        <div class="relative h-64 w-full">
+         <iframe
+          id="google-maps-embed"
+          title="Lyonskye Offshore Marine Location Map"
+          class="h-full w-full border-0"
+          loading="lazy"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=71%20Obio%20Imo%20Street%2C%20Uyo%2C%20Akwa%20Ibom%20State%2C%20Nigeria&t=&z=16&ie=UTF8&iwloc=&output=embed">
+         </iframe>
+        </div>
+        <div class="flex items-center justify-between border-t border-slate-100 bg-slate-50 px-4 py-3 text-xs text-[#061d3b]">
+         <div class="flex items-center gap-2">
+          <i data-lucide="map-pin" class="h-4 w-4 text-[#061d3b]"></i>
+          <span class="font-semibold">Uyo Headquarters & Gulf of Guinea Operations</span>
+         </div>
+         <a href="https://maps.google.com/?q=71+Obio+Imo+Street,+Uyo,+Akwa+Ibom+State,+Nigeria" target="_blank" rel="noopener noreferrer" class="font-bold text-sky-700 underline hover:text-sky-900">Open in Maps</a>
         </div>
        </div>
       </aside>
-      <form id="contact-form" class="canva-panel rounded-sm p-7 shadow-sm" novalidate="">
+      <form id="contact-form" action="https://formsubmit.co/contact@lyonskyeoffshore.com" method="POST" class="canva-panel rounded-sm p-7 shadow-sm" novalidate="">
+        <input type="hidden" name="_subject" value="New Maritime Enquiry - Lyonskye Offshore Marine Ltd.">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
        <div class="grid gap-5 sm:grid-cols-2">
         <div><label data-template-id="label-full-name" class="canva-text mb-2 block font-bold" for="full_name" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Full name *</label><input id="full_name" name="full_name" class="focus-ring w-full border border-slate-300 bg-white p-3" required="">
          <p id="full_name-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
@@ -307,28 +339,64 @@
    </div>
   </footer><button id="back-top" class="focus-ring fixed bottom-5 right-5 hidden rounded-full bg-[#2b83b9] p-3 text-white shadow-lg" type="button" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
   <script>
+    const RECIPIENT_EMAIL = "contact@lyonskyeoffshore.com";
     if (!window.dataSdk) {
       window.dataSdk = {
         init: async () => ({ isOk: true }),
         create: async (data) => {
+          let sentSuccessfully = false;
+          // 1. Try forwarding directly to contact@lyonskyeoffshore.com via FormSubmit AJAX
+          try {
+            const emailRes = await fetch(`https://formsubmit.co/ajax/${RECIPIENT_EMAIL}`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify({
+                _subject: `New Maritime Enquiry: ${data.service || 'General'} - ${data.full_name || 'Client'}`,
+                _template: 'table',
+                "Full Name": data.full_name,
+                "Company": data.company || "N/A",
+                "Email Address": data.email,
+                "Phone Number": data.phone || "N/A",
+                "Service of Interest": data.service,
+                "Message": data.message,
+                "Submitted At": data.submitted_at || new Date().toISOString()
+              })
+            });
+            if (emailRes.ok) {
+              sentSuccessfully = true;
+            }
+          } catch (err) {
+            console.warn('Direct email submission notice:', err);
+          }
+
+          // 2. Also log to internal backend API if present
           try {
             const res = await fetch('/api/enquiries', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data)
+              body: JSON.stringify({ ...data, recipient: RECIPIENT_EMAIL })
             });
-            if (res.ok) return { isOk: true };
+            if (res.ok) {
+              sentSuccessfully = true;
+            }
           } catch (e) {
-            console.warn('API error, falling back to local storage', e);
+            console.warn('API route notice:', e);
           }
+
+          // 3. Keep local backup in browser storage
           try {
             const saved = JSON.parse(localStorage.getItem('lyonskye_enquiries') || '[]');
-            saved.push(data);
+            saved.push({ ...data, recipient: RECIPIENT_EMAIL, savedAt: new Date().toISOString() });
             localStorage.setItem('lyonskye_enquiries', JSON.stringify(saved));
-            return { isOk: true };
+            sentSuccessfully = true;
           } catch (e) {
-            return { isOk: false };
+            console.warn('Storage notice:', e);
           }
+
+          return { isOk: sentSuccessfully };
         }
       };
     }

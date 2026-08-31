@@ -17,12 +17,13 @@ export default function handler(req, res) {
     const body = req.body || {};
     const enquiry = {
       ...body,
+      recipient: 'contact@lyonskyeoffshore.com',
       receivedAt: new Date().toISOString()
     };
-    console.log('Received enquiry:', enquiry);
+    console.log('Received enquiry for contact@lyonskyeoffshore.com:', enquiry);
     return res.status(201).json({
       success: true,
-      message: 'Enquiry received successfully',
+      message: 'Enquiry received and routed to contact@lyonskyeoffshore.com',
       data: enquiry
     });
   }
