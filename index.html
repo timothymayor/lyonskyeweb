@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-01-4b600cf","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyonskye Offshore Marine Ltd.</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#061d3b; --navy-2:#0c3159; --blue:#2b83b9; --mist:#eef6f8; --ink:#10233d; --gold:#cba65a; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:"DM Sans",sans-serif; color:var(--ink); overflow-x:hidden; }
+    .serif { font-family:"Fraunces",serif; }
+    .wave-grid { background-image:radial-gradient(circle at 15% 15%,rgba(74,161,205,.12) 0 1px,transparent 1px),linear-gradient(125deg,transparent 47%,rgba(255,255,255,.05) 48%,transparent 49%,transparent 51%,rgba(255,255,255,.05) 52%,transparent 53%); background-size:20px 20px,58px 58px; }
+    .nav-link { color:#d9eafa; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; font-weight:700; padding:.55rem .2rem; }
+    .nav-link:hover,.nav-link:focus-visible { color:#8fd3f4; }
+    .hero-slide { opacity:0; pointer-events:none; transition:opacity .9s ease; }
+    .hero-slide.active { opacity:1; pointer-events:auto; }
+    .hero-slide img { animation:kenburns 12s ease-out both; }
+    .hero-slide.active img { animation-play-state:running; }
+    @keyframes kenburns { from { transform:scale(1.02); } to { transform:scale(1.13); } }
+    .slider-paused img { animation-play-state:paused!important; }
+    .reveal { opacity:0; transform:translateY(22px); transition:opacity .65s ease,transform .65s ease; }
+    .reveal.in-view { opacity:1; transform:none; }
+    .service-card { border:1px solid #d9e6ee; transition:transform .25s ease,box-shadow .25s ease; }
+    .service-card:hover { transform:translateY(-4px); box-shadow:0 16px 35px rgba(6,29,59,.1); }
+    .service-detail { display:grid; grid-template-rows:0fr; transition:grid-template-rows .35s ease; }
+    .service-detail > div { overflow:hidden; }
+    .service-card.expanded .service-detail { grid-template-rows:1fr; }
+    .service-card.expanded .service-toggle svg { transform:rotate(45deg); }
+    .testimonial { display:none; }
+    .testimonial.active { display:block; animation:fade .45s ease; }
+    @keyframes fade { from { opacity:0; transform:translateX(12px) } to { opacity:1; transform:none } }
+    .dot.active { background:#8fd3f4; transform:scale(1.2); }
+    .map-water { background:linear-gradient(135deg,#d8f1f7,#95cfe4); position:relative; overflow:hidden; }
+    .map-water:before { content:""; position:absolute; inset:0; opacity:.42; background:repeating-radial-gradient(ellipse at 30% 70%,transparent 0 16px,rgba(255,255,255,.7) 17px 18px,transparent 19px 34px); }
+    .focus-ring:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline:3px solid #8fd3f4; outline-offset:3px; }
+    .mobile-open { display:flex!important; }
+    @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important} .reveal{opacity:1;transform:none} }
+  </style>
+  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full bg-white" style="background: rgb(255, 255, 255);">
+  <header data-template-id="site-header" class="canva-header sticky top-0 z-50 border-b border-white/10" style="background:#061d3b">
+   <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+    <a href="#home" class="focus-ring flex items-center gap-3 rounded" aria-label="Lyonskye Offshore Marine home"> <img data-template-id="header-logo" loading="lazy" class="canva-image h-11 w-auto rounded-sm bg-white p-1" src="canva://MAHT0mY72G0/1" alt="Lyonskye Offshore Marine Ltd. transparent navy circular emblem and wordmark"> </a>
+    <nav class="hidden items-center gap-6 md:flex" aria-label="Primary navigation">
+     <a class="nav-link focus-ring rounded" href="#home">Home</a><a class="nav-link focus-ring rounded" href="#about">About Us</a><a class="nav-link focus-ring rounded" href="#services">Services</a><a class="nav-link focus-ring rounded" href="#testimonials">Testimonials</a><a class="nav-link focus-ring rounded" href="#blog">Blog</a><a class="nav-link focus-ring rounded" href="#contact">Contact</a>
+    </nav><button id="menu-button" type="button" class="focus-ring rounded p-2 text-white md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu"></i></button>
+   </div>
+   <nav id="mobile-menu" class="hidden flex-col border-t border-white/10 px-6 py-4 md:hidden" aria-label="Mobile navigation">
+    <a class="nav-link mobile-link" href="#home">Home</a><a class="nav-link mobile-link" href="#about">About Us</a><a class="nav-link mobile-link" href="#services">Services</a><a class="nav-link mobile-link" href="#testimonials">Testimonials</a><a class="nav-link mobile-link" href="#blog">Blog</a><a class="nav-link mobile-link" href="#contact">Contact</a>
+   </nav>
+  </header>
+  <main>
+   <section id="home" class="relative min-h-[680px] overflow-hidden bg-slate-950 text-white" aria-label="Lyonskye service highlights">
+    <div id="hero-slider" class="absolute inset-0">
+     <div class="hero-slide active absolute inset-0"><img data-template-id="hero-slide-1-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Colorful stacked shipping containers at a port exemplify global logistics.">
+     </div>
+     <div class="hero-slide absolute inset-0"><img data-template-id="hero-slide-2-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/19926672/pexels-photo-19926672.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Man in red jacket using binoculars on a ship at sunset, working at sea.">
+     </div>
+     <div class="hero-slide absolute inset-0"><img data-template-id="hero-slide-3-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/28447154/pexels-photo-28447154.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Workers loading supplies onto a ship deck as part of maritime logistics.">
+     </div>
+     <div class="hero-slide absolute inset-0"><img data-template-id="hero-slide-4-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/3197704/pexels-photo-3197704.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Supply vessel approaching offshore oil platform in Danish waters, showcasing maritime industry.">
+     </div>
+     <div class="hero-slide absolute inset-0"><img data-template-id="hero-slide-5-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/12903651/pexels-photo-12903651.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="A container ship is guided by a tugboat on the Elbe River in Hamburg, Germany.">
+     </div>
+     <div class="hero-slide absolute inset-0"><img data-template-id="hero-slide-6-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/8883568/pexels-photo-8883568.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="A drone captures a tugboat navigating the vast ocean under a clear blue sky.">
+     </div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#061d3b]/95 via-[#061d3b]/75 to-[#061d3b]/30"></div>
+    <div class="wave-grid absolute inset-0"></div>
+    <div class="relative mx-auto flex min-h-[680px] max-w-7xl flex-col justify-center px-5 py-24 lg:px-8">
+     <div class="max-w-3xl">
+      <p data-template-id="hero-eyebrow" class="canva-text mb-5 text-sm font-bold uppercase tracking-[.22em] text-sky-200" style="color: rgb(188, 232, 250); font-weight: 700; font-style: normal; font-size: 16px;">Nigeria · Gulf of Guinea</p>
+      <h1 data-template-id="hero-title" class="canva-text serif max-w-3xl font-bold leading-tight" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Integrated Maritime &amp; Offshore Support Solutions</h1>
+      <p data-template-id="hero-copy" class="canva-text mt-6 max-w-2xl text-lg leading-8 text-slate-100" style="color: rgb(239, 249, 255); font-weight: 400; font-style: normal; font-size: 18px;">Serving vessel owners, operators, energy companies, and marine stakeholders across Nigeria and the Gulf of Guinea.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+       <a data-template-id="hero-primary-cta" class="canva-button focus-ring rounded-sm px-6 py-3 font-bold transition hover:-translate-y-0.5" href="#services" style="background: rgb(43, 131, 185); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Explore Our Services</a> <a data-template-id="hero-secondary-cta" class="canva-button focus-ring rounded-sm border px-6 py-3 font-bold transition hover:bg-white/10" href="#contact" style="background: transparent; color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact Us</a>
+      </div>
+     </div>
+     <div class="absolute bottom-8 left-5 right-5 flex items-end justify-between lg:left-8 lg:right-8">
+      <div>
+       <p id="slide-label" class="text-sm font-bold uppercase tracking-[.16em] text-white" aria-live="polite">Shipping Agency</p>
+       <div class="mt-3 h-1 w-44 overflow-hidden bg-white/35">
+        <div id="progress-bar" class="h-full bg-sky-300 transition-all duration-300"></div>
+       </div>
+      </div>
+      <div class="flex items-center gap-2 rounded bg-[#061d3b]/70 p-2 backdrop-blur">
+       <button id="hero-prev" type="button" aria-label="Previous service image" class="focus-ring rounded p-2"><i data-lucide="chevron-left"></i></button> <button id="hero-play" type="button" aria-label="Pause automatic slider" class="focus-ring rounded p-2"><i data-lucide="pause"></i></button> <button id="hero-next" type="button" aria-label="Next service image" class="focus-ring rounded p-2"><i data-lucide="chevron-right"></i></button>
+      </div>
+     </div>
+     <div id="hero-dots" class="absolute bottom-8 left-1/2 flex -translate-x-1/2 gap-2" aria-label="Hero slide selection"></div>
+    </div>
+   </section>
+   <section id="about" class="bg-white py-20 lg:py-28">
+    <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+     <div class="reveal relative">
+      <div class="absolute -left-4 -top-4 h-36 w-36 border-l-2 border-t-2 border-sky-500"></div><img data-template-id="about-image" loading="lazy" class="canva-image relative h-[420px] w-full object-cover shadow-xl" src="https://images.pexels.com/photos/14810111/pexels-photo-14810111.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A cargo ship moves through the ocean, captured from above in a seascape scene.">
+      <div data-template-id="about-image-caption" class="canva-banner absolute bottom-0 right-0 max-w-xs p-5 shadow-lg" style="background: rgb(6, 29, 59); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Focused support for complex coastal, port and offshore operations.</div>
+     </div>
+     <div class="reveal">
+      <p data-template-id="about-eyebrow" class="canva-text text-sm font-bold uppercase tracking-[.18em]" style="color: rgb(43, 131, 185); font-weight: 700; font-style: normal; font-size: 16px;">About Lyonskye</p>
+      <h2 data-template-id="about-title" class="canva-text serif mt-3 font-bold leading-tight" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 24px;">A dependable marine partner, close to the operation.</h2>
+      <p data-template-id="about-copy-1" class="canva-text mt-6 leading-8" style="color: rgb(36, 59, 83); font-weight: 400; font-style: normal; font-size: 16px;">Lyonskye Offshore Marine Ltd. is a Nigerian maritime company providing professional marine, shipping, logistics and offshore support solutions to vessel owners, operators, energy companies and marine stakeholders.</p>
+      <p data-template-id="about-copy-2" class="canva-text mt-4 leading-8" style="color: rgb(36, 59, 83); font-weight: 400; font-style: normal; font-size: 16px;">Lyonskye delivers integrated solutions designed for the rigorous demands of coastal, port, and offshore environments across Nigeria and the Gulf of Guinea.</p>
+      <div class="mt-8 grid grid-cols-2 gap-3">
+       <div data-template-id="trust-safety" class="canva-tag rounded-sm p-4 font-bold" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Safety</div>
+       <div data-template-id="trust-compliance" class="canva-tag rounded-sm p-4 font-bold" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Compliance</div>
+       <div data-template-id="trust-reliability" class="canva-tag rounded-sm p-4 font-bold" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Reliability</div>
+       <div data-template-id="trust-regional" class="canva-tag rounded-sm p-4 font-bold" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Regional Expertise</div>
+      </div>
+      <blockquote data-template-id="mission-callout" class="canva-banner mt-7 border-l-4 p-5 italic leading-7" style="background: rgb(248, 252, 253); color: rgb(12, 49, 89); font-weight: 400; font-style: normal; font-size: 16px;">Our approach is straightforward: responsive coordination, practical maritime knowledge, and dependable support where it matters.</blockquote>
+     </div>
+    </div>
+   </section>
+   <section id="services" class="bg-[#eef6f8] py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="max-w-2xl reveal">
+      <p data-template-id="services-eyebrow" class="canva-text text-sm font-bold uppercase tracking-[.18em]" style="color: rgb(43, 131, 185); font-weight: 700; font-style: normal; font-size: 16px;">What we do</p>
+      <h2 data-template-id="services-title" class="canva-text serif mt-3 font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 24px;">Marine services designed around your operation.</h2>
+      <p data-template-id="services-copy" class="canva-text mt-4 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Explore our service areas and speak with our team about your specific operational requirements.</p>
+     </div>
+     <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <article data-service="Shipping Agency" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-1-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Shipping Agency</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand Shipping Agency details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-1-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">As your trusted local and international shipping agent, we manage every aspect of vessel port calls, from pre-arrival planning and berth coordination to customs clearance, immigration formalities, and cargo documentation. Our experienced team liaises directly with port authorities, terminals, and regulatory bodies to ensure fast turnaround, full compliance, and cost-efficient operations for every port call.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+      <article data-service="Manning / Crew Supply" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-2-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Manning / Crew Supply</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand Manning and Crew Supply details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-2-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">We provide reliable, fully certified crew solutions for vessels across all trades. Our manning services cover recruitment, screening, medical fitness verification, and deployment of officers, ratings, and specialized personnel, all in strict adherence to STCW and MLC 2006 requirements. We take pride in matching the right talent to your operational needs, ensuring safety, competence, and continuity onboard.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+      <article data-service="General Ship Chandling" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-3-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">General Ship Chandling</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand General Ship Chandling details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-3-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Our ship chandling services ensure vessels are fully provisioned and equipped, wherever they call. We supply fresh provisions, bonded stores, deck and engine spares, safety gear, and technical equipment through a trusted supplier network. With a focus on quality, punctuality, and competitive pricing, we help minimize port delays and keep your vessel operation-ready.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+      <article data-service="Marine Logistics / Offshore Support Services" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-4-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Marine Logistics / Offshore Support Services</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand Marine Logistics and Offshore Support Services details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-4-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">We deliver integrated logistics solutions for offshore operations, supporting oil &amp; gas, renewable energy, and marine construction projects. Our offerings include offshore supply vessel coordination, cargo and equipment transportation, warehousing, freight forwarding, and rig-to-shore logistics, backed by an experienced operations team focused on safety, efficiency, and reliability.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+      <article data-service="Maritime Support Services" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-5-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Maritime Support Services</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand Maritime Support Services details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-5-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">From technical consultancy and vessel husbandry to regulatory compliance and emergency response coordination, our maritime support services are designed to be a single, dependable point of contact for shipowners and operators. We help clients navigate complex maritime requirements with responsive, expert guidance at every stage of vessel operations.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+      <article data-service="Vessel Hiring, Leasing and Chartering" class="service-card canva-card reveal rounded-sm bg-white p-6">
+       <div class="flex items-start justify-between gap-4">
+        <h3 data-template-id="service-6-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Vessel Hiring, Leasing and Chartering</h3><button class="service-toggle focus-ring rounded border border-slate-200 p-2" type="button" aria-label="Expand Vessel Hiring Leasing and Chartering details" aria-expanded="false"><i data-lucide="plus"></i></button>
+       </div>
+       <div class="service-detail">
+        <div>
+         <p data-template-id="service-6-description" class="canva-text pt-5 text-sm leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">We offer flexible vessel hiring, leasing, and chartering arrangements, from short-term spot charters to long-term lease agreements, tailored to cargo, offshore, and specialized project needs. Drawing on an extensive network of vessel owners and operators, assisting clients in sourcing the right tonnage and negotiating favorable, well-structured contracts.</p><button class="discuss-btn focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold" type="button">Discuss a requirement <i data-lucide="arrow-right"></i></button>
+        </div>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="testimonials" class="bg-[#061d3b] py-20 text-white lg:py-28">
+    <div class="mx-auto max-w-5xl px-5 text-center lg:px-8">
+     <p data-template-id="testimonials-eyebrow" class="canva-text text-sm font-bold uppercase tracking-[.18em]" style="color: rgb(143, 211, 244); font-weight: 700; font-style: normal; font-size: 16px;">Draft testimonials</p>
+     <h2 data-template-id="testimonials-title" class="canva-text serif mt-3 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Feedback space for client review.</h2>
+     <div id="testimonial-track" class="mt-10 text-left">
+      <figure class="testimonial active">
+       <blockquote data-template-id="testimonial-1-quote" class="canva-text serif text-2xl leading-relaxed" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">“Draft quote: The team brought clarity and responsiveness to a complex port-call coordination process.”</blockquote>
+       <figcaption data-template-id="testimonial-1-name" class="canva-text mt-6 font-bold text-sky-200" style="color: rgb(188, 232, 250); font-weight: 700; font-style: normal; font-size: 16px;">[Client Name], Vessel Operator</figcaption>
+      </figure>
+      <figure class="testimonial">
+       <blockquote data-template-id="testimonial-2-quote" class="canva-text serif text-2xl leading-relaxed" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">“Draft quote: Lyonskye understood the importance of dependable coordination across our marine support requirements.”</blockquote>
+       <figcaption data-template-id="testimonial-2-name" class="canva-text mt-6 font-bold text-sky-200" style="color: rgb(188, 232, 250); font-weight: 700; font-style: normal; font-size: 16px;">[Client Name], Energy Services Company</figcaption>
+      </figure>
+      <figure class="testimonial">
+       <blockquote data-template-id="testimonial-3-quote" class="canva-text serif text-2xl leading-relaxed" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">“Draft quote: A practical, responsive point of contact for operational planning and vessel support.”</blockquote>
+       <figcaption data-template-id="testimonial-3-name" class="canva-text mt-6 font-bold text-sky-200" style="color: rgb(188, 232, 250); font-weight: 700; font-style: normal; font-size: 16px;">[Client Name], Marine Contractor</figcaption>
+      </figure>
+     </div>
+     <div class="mt-8 flex items-center justify-center gap-4"><button id="testimonial-prev" class="focus-ring rounded border border-white/30 p-2" type="button" aria-label="Previous testimonial"><i data-lucide="arrow-left"></i></button>
+      <div id="testimonial-dots" class="flex gap-2"></div><button id="testimonial-next" class="focus-ring rounded border border-white/30 p-2" type="button" aria-label="Next testimonial"><i data-lucide="arrow-right"></i></button>
+     </div>
+    </div>
+   </section>
+   <section id="blog" class="bg-white py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="reveal">
+      <p data-template-id="blog-eyebrow" class="canva-text text-sm font-bold uppercase tracking-[.18em]" style="color: rgb(43, 131, 185); font-weight: 700; font-style: normal; font-size: 16px;">Draft insights</p>
+      <h2 data-template-id="blog-title" class="canva-text serif mt-3 font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 24px;">Useful maritime operations notes.</h2>
+      <p data-template-id="blog-copy" class="canva-text mt-4" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Editable draft content for future publication.</p>
+     </div>
+     <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <article class="canva-card reveal border border-slate-200 p-6">
+       <p data-template-id="blog-1-category" class="canva-tag text-xs font-bold uppercase tracking-widest" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Port Operations</p>
+       <p data-template-id="blog-1-date" class="canva-text mt-4 text-sm" style="color: rgb(89, 117, 142); font-weight: 400; font-style: normal; font-size: 16px;">Coming soon</p>
+       <h3 data-template-id="blog-1-title" class="canva-text mt-3 text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Preparing for a smooth vessel port call</h3>
+       <p data-template-id="blog-1-excerpt" class="canva-text mt-4 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">A draft checklist can help teams align arrival information, documentation, port coordination, and operational expectations early.</p>
+       <p data-template-id="blog-1-more" class="canva-text blog-more hidden mt-3 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">This editable draft can be developed into a practical guide tailored to your preferred audience and service scope.</p><button class="blog-toggle focus-ring mt-5 font-bold underline underline-offset-4" type="button" aria-expanded="false">Read more</button>
+      </article>
+      <article class="canva-card reveal border border-slate-200 p-6">
+       <p data-template-id="blog-2-category" class="canva-tag text-xs font-bold uppercase tracking-widest" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Crew Management</p>
+       <p data-template-id="blog-2-date" class="canva-text mt-4 text-sm" style="color: rgb(89, 117, 142); font-weight: 400; font-style: normal; font-size: 16px;">Coming soon</p>
+       <h3 data-template-id="blog-2-title" class="canva-text mt-3 text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Crew compliance essentials</h3>
+       <p data-template-id="blog-2-excerpt" class="canva-text mt-4 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">This draft outlines considerations for screening, records, readiness, and continuity when planning crew support.</p>
+       <p data-template-id="blog-2-more" class="canva-text blog-more hidden mt-3 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Content should be reviewed and adapted to current operational, regulatory, and client-specific requirements before publication.</p><button class="blog-toggle focus-ring mt-5 font-bold underline underline-offset-4" type="button" aria-expanded="false">Read more</button>
+      </article>
+      <article class="canva-card reveal border border-slate-200 p-6">
+       <p data-template-id="blog-3-category" class="canva-tag text-xs font-bold uppercase tracking-widest" style="background: rgb(228, 243, 248); color: rgb(12, 49, 89); font-weight: 700; font-style: normal; font-size: 16px;">Offshore Logistics</p>
+       <p data-template-id="blog-3-date" class="canva-text mt-4 text-sm" style="color: rgb(89, 117, 142); font-weight: 400; font-style: normal; font-size: 16px;">Coming soon</p>
+       <h3 data-template-id="blog-3-title" class="canva-text mt-3 text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Offshore logistics planning in the Gulf of Guinea</h3>
+       <p data-template-id="blog-3-excerpt" class="canva-text mt-4 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">An editable draft on connecting cargo movement, vessel coordination, and shore-side communication within offshore plans.</p>
+       <p data-template-id="blog-3-more" class="canva-text blog-more hidden mt-3 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Future published content can focus on planning principles and avoid operational claims unless verified by the organisation.</p><button class="blog-toggle focus-ring mt-5 font-bold underline underline-offset-4" type="button" aria-expanded="false">Read more</button>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="contact" class="bg-[#eef6f8] py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+     <div class="max-w-2xl">
+      <p data-template-id="contact-eyebrow" class="canva-text text-sm font-bold uppercase tracking-[.18em]" style="color: rgb(43, 131, 185); font-weight: 700; font-style: normal; font-size: 16px;">Start a conversation</p>
+      <h2 data-template-id="contact-title" class="canva-text serif mt-3 font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 24px;">Tell us what your operation needs.</h2>
+      <p data-template-id="contact-copy" class="canva-text mt-4 leading-7" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Send an enquiry and our team can discuss the right support for your vessel, port, marine, or offshore requirement.</p>
+     </div>
+     <div class="mt-10 grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
+      <aside class="space-y-5">
+       <div data-template-id="contact-details-panel" class="canva-panel p-7" style="background: rgb(255, 255, 255);">
+        <h3 data-template-id="contact-details-title" class="canva-text text-xl font-bold" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 20px;">Contact details</h3>
+        <p data-template-id="contact-address" class="canva-text mt-5" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Address: Add office address</p>
+        <p data-template-id="contact-email" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Email: Add business email</p>
+        <p data-template-id="contact-phone" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Phone: Add business phone</p>
+        <hr class="my-5 border-slate-200">
+        <p data-template-id="contact-linkedin" class="canva-text" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">LinkedIn: Add handle</p>
+        <p data-template-id="contact-instagram" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Instagram: Add handle</p>
+        <p data-template-id="contact-facebook" class="canva-text mt-3" style="color: rgb(54, 82, 109); font-weight: 400; font-style: normal; font-size: 16px;">Facebook: Add handle</p>
+       </div>
+       <div class="map-water min-h-64 border border-sky-200 p-6">
+        <div class="relative z-10 mt-14 rounded bg-[#061d3b] p-4 text-white shadow-lg"><i data-lucide="map-pin" class="mb-2 text-sky-300"></i>
+         <p data-template-id="map-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Nigeria / Gulf of Guinea operations</p>
+        </div>
+       </div>
+      </aside>
+      <form id="contact-form" class="canva-panel rounded-sm p-7 shadow-sm" novalidate="">
+       <div class="grid gap-5 sm:grid-cols-2">
+        <div><label data-template-id="label-full-name" class="canva-text mb-2 block font-bold" for="full_name" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Full name *</label><input id="full_name" name="full_name" class="focus-ring w-full border border-slate-300 bg-white p-3" required="">
+         <p id="full_name-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+        </div>
+        <div><label data-template-id="label-company" class="canva-text mb-2 block font-bold" for="company" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Company</label><input id="company" name="company" class="focus-ring w-full border border-slate-300 bg-white p-3">
+         <p id="company-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+        </div>
+        <div><label data-template-id="label-email" class="canva-text mb-2 block font-bold" for="email" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Email address *</label><input id="email" name="email" type="email" class="focus-ring w-full border border-slate-300 bg-white p-3" required="">
+         <p id="email-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+        </div>
+        <div><label data-template-id="label-phone" class="canva-text mb-2 block font-bold" for="phone" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Phone</label><input id="phone" name="phone" type="tel" class="focus-ring w-full border border-slate-300 bg-white p-3">
+         <p id="phone-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+        </div>
+       </div>
+       <div class="mt-5"><label data-template-id="label-service" class="canva-text mb-2 block font-bold" for="service" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Service of interest *</label><select id="service" name="service" class="focus-ring w-full border border-slate-300 bg-white p-3" required=""><option value="">Select a service</option><option>Shipping Agency</option><option>Manning / Crew Supply</option><option>General Ship Chandling</option><option>Marine Logistics / Offshore Support Services</option><option>Maritime Support Services</option><option>Vessel Hiring, Leasing and Chartering</option></select>
+        <p id="service-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+       </div>
+       <div class="mt-5"><label data-template-id="label-message" class="canva-text mb-2 block font-bold" for="message" style="color: rgb(6, 29, 59); font-weight: 700; font-style: normal; font-size: 16px;">Message *</label><textarea id="message" name="message" rows="5" class="focus-ring w-full border border-slate-300 bg-white p-3" required=""></textarea>
+        <p id="message-error" class="mt-1 text-sm text-red-700" aria-live="polite"></p>
+       </div><button id="submit-contact" data-template-id="contact-submit" class="canva-button focus-ring mt-6 w-full rounded-sm px-5 py-3 font-bold" type="submit" style="background: rgb(6, 29, 59); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Send enquiry</button>
+       <p id="form-status" class="mt-4 font-semibold" aria-live="polite"></p>
+      </form>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer data-template-id="site-footer" class="canva-footer" style="background:#061d3b">
+   <div class="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-9 text-slate-200 md:flex-row md:items-center md:justify-between lg:px-8"><img data-template-id="footer-logo" loading="lazy" class="canva-image h-12 w-auto rounded-sm bg-white p-1" src="canva://MAHT0oJ4cuQ/1" alt="Lyonskye Offshore Marine Ltd. navy maritime emblem and wordmark">
+    <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm"><a class="focus-ring rounded" href="#about">About</a><a class="focus-ring rounded" href="#services">Services</a><a class="focus-ring rounded" href="#contact">Contact</a>
+    </div>
+    <div>
+     <p data-template-id="footer-copyright" class="canva-text text-sm" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">© Lyonskye Offshore Marine Ltd.</p>
+     <p data-template-id="footer-privacy" class="canva-text mt-1 text-xs text-slate-400" style="color: rgb(185, 204, 224); font-weight: 400; font-style: normal; font-size: 16px;">Privacy note: enquiry details are handled privately.</p>
+    </div>
+   </div>
+  </footer><button id="back-top" class="focus-ring fixed bottom-5 right-5 hidden rounded-full bg-[#2b83b9] p-3 text-white shadow-lg" type="button" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+  <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
+  <script>
+    const services = ["Shipping Agency","Manning / Crew Supply","General Ship Chandling","Marine Logistics / Offshore Support Services","Maritime Support Services","Vessel Hiring, Leasing and Chartering"];
+    const testimonials = ["testimonial-1","testimonial-2","testimonial-3"];
+    const articles = ["blog-1","blog-2","blog-3"];
+    lucide.createIcons();
+
+    const menuButton=document.getElementById("menu-button"), mobileMenu=document.getElementById("mobile-menu");
+    menuButton.addEventListener("click",()=>{const open=mobileMenu.classList.toggle("mobile-open");menuButton.setAttribute("aria-expanded",open);menuButton.setAttribute("aria-label",open?"Close navigation menu":"Open navigation menu");});
+    document.querySelectorAll(".mobile-link").forEach(link=>link.addEventListener("click",()=>{mobileMenu.classList.remove("mobile-open");menuButton.setAttribute("aria-expanded","false");}));
+
+    const slides=[...document.querySelectorAll(".hero-slide")], labels=services, hero=document.getElementById("hero-slider"), progress=document.getElementById("progress-bar"), slideLabel=document.getElementById("slide-label"), dots=document.getElementById("hero-dots");
+    let currentSlide=0, playing=!matchMedia("(prefers-reduced-motion: reduce)").matches, heroTimer;
+    slides.forEach((_,i)=>{const b=document.createElement("button");b.className="dot h-2.5 w-2.5 rounded-full bg-white/60 focus-ring";b.setAttribute("aria-label","Show "+labels[i]);b.addEventListener("click",()=>showSlide(i));dots.appendChild(b);});
+    function showSlide(i){slides[currentSlide].classList.remove("active");currentSlide=(i+slides.length)%slides.length;slides[currentSlide].classList.add("active");slideLabel.textContent=labels[currentSlide];progress.style.width=((currentSlide+1)/slides.length*100)+"%";[...dots.children].forEach((d,n)=>d.classList.toggle("active",n===currentSlide));}
+    function startHero(){clearInterval(heroTimer);if(playing) heroTimer=setInterval(()=>showSlide(currentSlide+1),6000);}
+    document.getElementById("hero-prev").onclick=()=>{showSlide(currentSlide-1);startHero()};document.getElementById("hero-next").onclick=()=>{showSlide(currentSlide+1);startHero()};
+    document.getElementById("hero-play").onclick=()=>{playing=!playing;hero.classList.toggle("slider-paused",!playing);document.getElementById("hero-play").setAttribute("aria-label",playing?"Pause automatic slider":"Play automatic slider");startHero()};
+    ["mouseenter","focusin"].forEach(e=>hero.addEventListener(e,()=>clearInterval(heroTimer)));["mouseleave","focusout"].forEach(e=>hero.addEventListener(e,startHero));showSlide(0);startHero();
+
+    document.querySelectorAll(".service-toggle").forEach(button=>button.addEventListener("click",()=>{const card=button.closest(".service-card"), open=card.classList.toggle("expanded");button.setAttribute("aria-expanded",open);}));
+    document.querySelectorAll(".discuss-btn").forEach(button=>button.addEventListener("click",()=>{document.getElementById("service").value=button.closest("[data-service]").dataset.service;document.getElementById("contact").scrollIntoView({behavior:"smooth"});}));
+
+    let testimonialIndex=0;const testimonialEls=[...document.querySelectorAll(".testimonial")], testimonialDots=document.getElementById("testimonial-dots");
+    testimonialEls.forEach((_,i)=>{const b=document.createElement("button");b.className="dot h-2.5 w-2.5 rounded-full bg-white/50 focus-ring";b.setAttribute("aria-label","Show testimonial "+(i+1));b.onclick=()=>showTestimonial(i);testimonialDots.appendChild(b);});
+    function showTestimonial(i){testimonialEls[testimonialIndex].classList.remove("active");testimonialIndex=(i+testimonialEls.length)%testimonialEls.length;testimonialEls[testimonialIndex].classList.add("active");[...testimonialDots.children].forEach((d,n)=>d.classList.toggle("active",n===testimonialIndex));}
+    document.getElementById("testimonial-prev").onclick=()=>showTestimonial(testimonialIndex-1);document.getElementById("testimonial-next").onclick=()=>showTestimonial(testimonialIndex+1);showTestimonial(0);
+
+    document.querySelectorAll(".blog-toggle").forEach(button=>button.addEventListener("click",()=>{const detail=button.parentElement.querySelector(".blog-more"), open=detail.classList.toggle("hidden");button.setAttribute("aria-expanded",String(open));button.textContent=open?"Show less":"Read more";}));
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in-view")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+    const backTop=document.getElementById("back-top");addEventListener("scroll",()=>backTop.classList.toggle("hidden",scrollY<500));backTop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+    const form=document.getElementById("contact-form"), status=document.getElementById("form-status"), submit=document.getElementById("submit-contact");
+    let dataReady=false;
+    const dataHandler={onDataChanged(){}};
+    (async()=>{const result=await window.dataSdk.init(dataHandler);dataReady=result.isOk;if(!result.isOk){status.textContent="Unable to prepare the enquiry form. Please try again shortly.";status.className="mt-4 font-semibold text-red-700";}})();
+    function setError(field,message){const el=document.getElementById(field+"-error");el.textContent=message;document.getElementById(field).setAttribute("aria-invalid",message?"true":"false");}
+    form.addEventListener("submit",async event=>{event.preventDefault();status.textContent="";let valid=true;["full_name","email","service","message"].forEach(f=>setError(f,""));const email=form.email.value.trim();if(!form.full_name.value.trim()){setError("full_name","Please enter your full name.");valid=false}if(!email||!/^\S+@\S+\.\S+$/.test(email)){setError("email","Please enter a valid email address.");valid=false}if(!form.service.value){setError("service","Please choose a service.");valid=false}if(!form.message.value.trim()){setError("message","Please tell us how we can help.");valid=false}if(!valid)return;if(!dataReady){status.textContent="The form is not ready yet. Please try again in a moment.";status.className="mt-4 font-semibold text-red-700";return}submit.disabled=true;submit.style.opacity=".65";const result=await window.dataSdk.create({full_name:form.full_name.value.trim(),company:form.company.value.trim(),email,phone:form.phone.value.trim(),service:form.service.value,message:form.message.value.trim(),submitted_at:new Date().toISOString()});submit.disabled=false;submit.style.opacity="1";if(result.isOk){form.reset();status.textContent="Thank you. Your enquiry has been sent successfully.";status.className="mt-4 font-semibold text-emerald-700"}else{status.textContent="We could not send your enquiry. Please try again.";status.className="mt-4 font-semibold text-red-700";}});
+  </script>
+ 
+</body></html>
