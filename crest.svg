@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Text Paths for circular text -->
+    <path id="crestTopTextPath" d="M 68,250 A 182,182 0 0,1 432,250" fill="none" />
+    <path id="crestBottomTextPath" d="M 430,250 A 180,180 0 0,1 70,250" fill="none" />
+  </defs>
+
+  <!-- ================= BASE / OUTER RING ================= -->
+  <!-- Outer Dark Navy Ring -->
+  <circle cx="250" cy="250" r="240" fill="#061d3b" />
+  <circle cx="250" cy="250" r="232" fill="#ffffff" />
+  <circle cx="250" cy="250" r="226" fill="#061d3b" />
+
+  <!-- Outer Text Track Band (White Background) -->
+  <circle cx="250" cy="250" r="220" fill="#ffffff" />
+
+  <!-- Inner Navy Ring enclosing the illustration -->
+  <circle cx="250" cy="250" r="148" fill="#061d3b" />
+  <circle cx="250" cy="250" r="143" fill="#ffffff" />
+
+  <!-- ================= TEXT IN TRACK ================= -->
+  <!-- Top Arc: LYONSKYE in bold serif -->
+  <text font-family="'Fraunces', 'DM Serif Display', 'Georgia', 'Times New Roman', serif" font-size="52" font-weight="900" fill="#061d3b" letter-spacing="10">
+    <textPath href="#crestTopTextPath" startOffset="50%" text-anchor="middle">LYONSKYE</textPath>
+  </text>
+
+  <!-- Left Side Vertical Divider Bars in Text Track -->
+  <g fill="#061d3b">
+    <rect x="52" y="215" width="6.5" height="70" rx="3" transform="rotate(-18 55 250)" />
+    <rect x="66" y="218" width="6.5" height="64" rx="3" transform="rotate(-18 69 250)" />
+  </g>
+
+  <!-- Right Side Vertical Divider Bars in Text Track -->
+  <g fill="#061d3b">
+    <rect x="428" y="218" width="6.5" height="64" rx="3" transform="rotate(18 431 250)" />
+    <rect x="442" y="215" width="6.5" height="70" rx="3" transform="rotate(18 445 250)" />
+  </g>
+
+  <!-- Bottom Arc: OFFSHORE MARINE LTD in bold sans-serif -->
+  <text font-family="'DM Sans', 'Montserrat', 'Helvetica Neue', sans-serif" font-size="24" font-weight="900" fill="#061d3b" letter-spacing="5">
+    <textPath href="#crestBottomTextPath" startOffset="50%" text-anchor="middle">OFFSHORE MARINE LTD</textPath>
+  </text>
+
+
+  <!-- ================= INNER ILLUSTRATION ================= -->
+  <!-- Sky background -->
+  <circle cx="250" cy="250" r="142" fill="#ffffff" />
+
+  <!-- ================= SUN & SUN RAYS (Top Right) ================= -->
+  <g fill="#061d3b" stroke="#061d3b">
+    <!-- Solid Sun Disc positioned in upper right sky -->
+    <circle cx="298" cy="162" r="23" stroke="none" />
+    
+    <!-- Radiant Sun Rays -->
+    <line x1="298" y1="130" x2="298" y2="114" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="316" y1="135" x2="328" y2="122" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="330" y1="150" x2="346" y2="142" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="333" y1="168" x2="352" y2="168" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="328" y1="186" x2="344" y2="194" stroke-width="4" stroke-linecap="round" />
+    <line x1="280" y1="133" x2="272" y2="120" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- ================= FLYING SEA BIRDS & CLOUDS ================= -->
+  <g fill="none" stroke="#061d3b" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Upper Left Sea Bird -->
+    <path d="M 174,152 Q 183,143 192,152 Q 201,143 210,152" stroke-width="4" />
+    <!-- Lower Left Sea Bird -->
+    <path d="M 148,198 Q 158,189 168,198 Q 178,189 188,198" stroke-width="4.5" />
+    <!-- Right Clouds / Birds -->
+    <path d="M 318,206 Q 328,198 338,206 Q 348,198 358,206" stroke-width="4" />
+  </g>
+
+  <!-- ================= ANCHOR TOP (Shackle, Chain, Stock) ================= -->
+  <g id="anchor-top" fill="#061d3b">
+    <!-- Large Anchor Loop / Shackle -->
+    <circle cx="250" cy="148" r="28" fill="none" stroke="#061d3b" stroke-width="9" />
+    <!-- Inner opening of shackle -->
+    <circle cx="250" cy="148" r="18" fill="#ffffff" />
+    
+    <!-- Shackle Pin base -->
+    <rect x="236" y="170" width="28" height="12" rx="3" />
+    
+    <!-- Chain winding through shackle -->
+    <path d="M 233,145 C 230,158 238,172 242,185" fill="none" stroke="#061d3b" stroke-width="5" stroke-linecap="round" />
+    <circle cx="233" cy="145" r="3.5" fill="#ffffff" />
+    <circle cx="235" cy="158" r="3.5" fill="#ffffff" />
+    <circle cx="240" cy="172" r="3.5" fill="#ffffff" />
+
+    <!-- Anchor Shank Top Section -->
+    <rect x="242" y="176" width="16" height="34" />
+
+    <!-- Anchor Stock (Heavy Crossbar) with end brackets -->
+    <rect x="194" y="195" width="112" height="18" rx="2" stroke="#061d3b" stroke-width="2" />
+    <!-- Left Bracket -->
+    <rect x="188" y="190" width="10" height="28" rx="2" fill="#061d3b" />
+    <rect x="191" y="194" width="4" height="20" rx="1" fill="#ffffff" />
+    <!-- Right Bracket -->
+    <rect x="302" y="190" width="10" height="28" rx="2" fill="#061d3b" />
+    <rect x="305" y="194" width="4" height="20" rx="1" fill="#ffffff" />
+    <!-- Stock horizontal groove -->
+    <line x1="202" y1="204" x2="298" y2="204" stroke="#ffffff" stroke-width="2.5" />
+  </g>
+
+  <!-- ================= OCEAN WAVES (Left & Right Flanks) ================= -->
+  <g fill="none" stroke="#061d3b" stroke-width="6" stroke-linecap="round">
+    <!-- Left Waves (4 distinct layered wave bands) -->
+    <path d="M 124,242 C 140,235 152,252 168,245 C 180,240 192,250 206,244" />
+    <path d="M 121,262 C 138,255 150,272 166,265 C 178,260 190,270 202,264" />
+    <path d="M 123,282 C 140,275 152,292 168,285 C 178,280 188,290 198,284" />
+    <path d="M 128,302 C 142,296 154,312 170,305 C 180,300 190,309 198,304" />
+
+    <!-- Right Waves (4 distinct layered wave bands) -->
+    <path d="M 294,244 C 308,250 320,240 332,245 C 348,252 360,235 376,242" />
+    <path d="M 298,264 C 310,270 322,260 334,265 C 350,272 362,255 379,262" />
+    <path d="M 302,284 C 312,290 322,280 332,285 C 348,292 360,275 377,282" />
+    <path d="M 302,304 C 310,309 320,300 330,305 C 346,312 358,296 372,302" />
+  </g>
+
+  <!-- ================= ANCHOR FLUKES / CRESCENT BASE ================= -->
+  <g fill="#061d3b" stroke="#061d3b" stroke-linejoin="round">
+    <!-- Anchor curved crescent arms wrapping under the lion -->
+    <path d="M 148,295 
+             C 152,368 348,368 352,295 
+             C 342,320 318,348 250,352 
+             C 182,348 158,320 148,295 Z" stroke-width="4" />
+    
+    <!-- Left Pointed Fluke / Palm -->
+    <path d="M 135,290 L 152,302 L 160,280 Z" />
+    <line x1="140" y1="288" x2="152" y2="340" stroke="#ffffff" stroke-width="3" fill="none" />
+
+    <!-- Right Pointed Fluke / Palm -->
+    <path d="M 365,290 L 348,302 L 340,280 Z" />
+    <line x1="360" y1="288" x2="348" y2="340" stroke="#ffffff" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- ================= MAJESTIC LION HEAD & MANE (Centerpiece) ================= -->
+  <!-- Complete Lion Silhouette in Deep Navy -->
+  <g id="lion-figure">
+    <path d="M 235,212 
+             C 215,202 192,216 182,236 
+             C 172,254 173,275 168,294 
+             C 164,312 170,332 182,348 
+             C 192,362 208,375 228,382 
+             C 246,388 258,382 266,374 
+             C 278,362 284,345 288,328 
+             C 292,318 300,314 310,312 
+             C 320,310 326,302 328,292 
+             C 330,278 322,268 328,255 
+             C 330,248 326,242 320,238 
+             C 310,232 302,238 295,242 
+             C 288,235 278,228 266,224 
+             C 255,220 245,215 235,212 Z" 
+          fill="#061d3b" stroke="#061d3b" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Lion's Noble Face (Crisp White Profile facing right) -->
+    <path d="M 258,242 
+             C 264,242 270,245 275,250 
+             C 280,255 288,258 296,262 
+             C 304,266 312,268 318,272 
+             C 322,275 324,280 322,284 
+             C 320,288 314,291 308,292 
+             C 302,293 298,298 292,300 
+             C 285,302 278,300 272,298 
+             C 275,306 280,312 284,320 
+             C 276,316 270,308 266,300 
+             C 262,296 258,292 254,288 
+             C 252,282 253,274 256,268 
+             C 254,264 252,258 253,252 
+             C 254,246 256,244 258,242 Z" 
+          fill="#ffffff" />
+
+    <!-- Lion Facial Feature Details (Navy) -->
+    <!-- Eye & Brow -->
+    <ellipse cx="286" cy="265" rx="5" ry="3.5" fill="#061d3b" transform="rotate(-10 286 265)" />
+    <path d="M 278,258 Q 288,253 296,260" fill="none" stroke="#061d3b" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 284,271 Q 290,272 294,269" fill="none" stroke="#061d3b" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Nose & Muzzle Profile -->
+    <path d="M 314,272 L 322,275 L 316,280 Z" fill="#061d3b" />
+    <path d="M 314,280 C 308,284 300,283 294,281" fill="none" stroke="#061d3b" stroke-width="3" stroke-linecap="round" />
+    <!-- Whisker dots -->
+    <circle cx="304" cy="286" r="1.6" fill="#061d3b" />
+    <circle cx="309" cy="287" r="1.6" fill="#061d3b" />
+    <circle cx="301" cy="290" r="1.6" fill="#061d3b" />
+    <circle cx="306" cy="291" r="1.6" fill="#061d3b" />
+
+    <!-- Lion's Ear -->
+    <path d="M 246,242 C 244,232 254,228 260,236 C 263,241 261,248 256,250 Z" fill="#061d3b" />
+    <path d="M 249,240 C 248,235 253,233 256,238" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Flowing Mane Locks (Dynamic White Curved Strands) -->
+    <g fill="none" stroke="#ffffff" stroke-linecap="round">
+      <path d="M 224,226 Q 242,234 250,256" stroke-width="4.5" />
+      <path d="M 206,244 Q 230,254 242,280" stroke-width="5" />
+      <path d="M 194,268 Q 220,278 232,308" stroke-width="5.5" />
+      <path d="M 188,296 Q 212,306 226,336" stroke-width="5.5" />
+      <path d="M 194,326 Q 218,336 236,360" stroke-width="5" />
+      <path d="M 215,350 Q 235,360 252,370" stroke-width="4.5" />
+      <!-- Secondary highlights in mane -->
+      <path d="M 235,280 Q 248,295 254,322" stroke-width="4" />
+      <path d="M 248,318 Q 260,335 268,356" stroke-width="4" />
+    </g>
+
+    <!-- Lower Chest Armor / Harness Band detail under Lion -->
+    <g fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round">
+      <path d="M 204,360 C 215,350 238,348 250,366" />
+      <circle cx="227" cy="358" r="9" fill="#061d3b" stroke="#ffffff" stroke-width="4" />
+      <line x1="227" y1="349" x2="227" y2="367" stroke="#ffffff" stroke-width="3" />
+      <line x1="218" y1="358" x2="236" y2="358" stroke="#ffffff" stroke-width="3" />
+    </g>
+  </g>
+</svg>

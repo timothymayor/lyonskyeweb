@@ -1,0 +1,8 @@
+{
+  "name": "Lyonskye Offshore Marine Ltd.",
+  "description": "Integrated maritime, shipping agency, chandling, logistics, and offshore support solutions across Nigeria and the Gulf of Guinea.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
