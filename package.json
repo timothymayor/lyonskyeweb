@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "echo 'Build complete'",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "node --check server.js api/health.js api/enquiries.js"
   },
   "dependencies": {
     "express": "^4.19.2"
